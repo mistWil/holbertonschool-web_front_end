@@ -86,7 +86,7 @@ a:hover {
     font-family: var(--font-family-title); /* Utilisation de la variable déjà définie */
     font-size: var(--font-size-xx-large); /* Utilisation de la variable déjà définie */
     font-weight: var(--font-weight-bold); /* Utilisation de la variable déjà définie */
-    margin-bottom: var(--section-title-margin); /* Utilisation de la nouvelle propriété personnalisée */
+    margin: var(--section-title-margin); /* Utilisation de la nouvelle propriété personnalisée */
     color: var(--section-title-color); /* Utilisation de la nouvelle propriété personnalisée */
 }
 
