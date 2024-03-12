@@ -47,6 +47,11 @@ body {
     font-weight: var(--font-weight-regular);
 }
 
+/* All elements with the class visually-hidden should have their display to none */
+.visually-hidden {
+    display: none;
+}
+
 /* Revisit the section-tagline and card-category declarations */
 .section-tagline {
     color: var(--color-primary);

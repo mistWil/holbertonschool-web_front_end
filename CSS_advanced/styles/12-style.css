@@ -57,9 +57,23 @@ body {
     font-weight: var(--font-weight-regular);
 }
 
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+a:hover {
+    color: inherit; /* Maintain inherited color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+/* All elements with the class visually-hidden should have their display to none */
+.visually-hidden {
+    display: none;
+}
+
 .card-category {
     color: var(--color-primary);
-    font-size: var(--font-size-medium); /* Adjust font size */
 }
 
 /* Target the class section-header and align horizontally with section-header-align */
@@ -86,17 +100,6 @@ body {
     text-transform: var(--section-tagline-transform);
     /* Set the weight of fonts to font-weight-bold */
     font-weight: var(--font-weight-bold);
-}
-
-/* Revisit the body and anchor declarations */
-a {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit color from parent */
-}
-
-a:hover {
-    color: inherit; /* Maintain inherited color on hover */
-    text-decoration: none; /* Remove underline on hover */
 }
 
 /* Target all 6 levels of heading tags */

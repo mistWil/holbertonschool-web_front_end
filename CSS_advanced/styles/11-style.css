@@ -53,22 +53,6 @@ body {
     font-weight: var(--font-weight-regular);
 }
 
-/* Targeting the section-tagline class */
-.section-tagline {
-    color: var(--color-primary);
-    font-size: var(--font-size-medium); /* Adjust font size */
-}
-
-.card-category {
-    color: var(--color-primary);
-    font-size: var(--font-size-medium); /* Adjust font size */
-}
-
-/* Target the class section-header and align horizontally with section-header-align */
-.section-header {
-    text-align: var(--section-header-align); /* Align horizontally */
-}
-
 /* Revisit the body and anchor declarations */
 a {
     text-decoration: none; /* Remove underline */
@@ -80,18 +64,35 @@ a:hover {
     text-decoration: none; /* Remove underline on hover */
 }
 
-/* Target all 6 levels of heading tags */
-h1, h2, h3, h4, h5, h6 {
-    /* Set font-family to font-family-title */
-    font-family: var(--font-family-title);
-     font-weight: var(--font-weight-bold);
+/* All elements with the class visually-hidden should have their display to none */
+.visually-hidden {
+    display: none;
 }
 
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Target the class section-header and align horizontally with section-header-align */
+.section-header {
+    text-align: var(--section-header-align); /* Align horizontally */
+}
+
+/* Targeting the section-tagline class */
 .section-tagline {
+    color: var(--color-primary);
+    font-size: var(--font-size-medium); /* Adjust font size */
      /* Set the family of fonts to font-family-title */
     font-family: var(--font-family-title);
     /* Transform the text to uppercase */
     text-transform: var(--section-tagline-transform);
     /* Set the weight of fonts to font-weight-bold */
     font-weight: var(--font-weight-bold);
+}
+
+/* Target all 6 levels of heading tags */
+h1, h2, h3, h4, h5, h6 {
+    /* Set font-family to font-family-title */
+    font-family: var(--font-family-title);
+     font-weight: var(--font-weight-bold);
 }
