@@ -55,6 +55,8 @@ body {
 
 /* Targeting the section-tagline class */
 .section-tagline {
+    color: var(--color-primary);
+    font-size: var(--font-size-medium); /* Adjust font size */
     /* Set the family of fonts to font-family-title */
     font-family: var(--font-family-title);
     /* Transform the text to uppercase */
