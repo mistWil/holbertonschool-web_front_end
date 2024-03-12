@@ -1,0 +1,63 @@
+:root {
+    /* Define custom font-size properties */
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+
+    /* Define custom font-family properties */
+    --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    /* Define custom font-weight properties */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Define colors */
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+}
+
+html {
+    /* Set font size to 62.5% of normal size */
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--text-color);
+    /* Set body's font size to font-size-medium */
+    font-size: var(--font-size-medium);
+    /* Set body's font-family to font-family-base */
+    font-family: var(--font-family-base);
+    /* Set the boldness of fonts in the body to font-weight-regular */
+    font-weight: var(--font-weight-regular);
+}
+
+/* Revisit the section-tagline and card-category declarations */
+.section-tagline {
+    color: var(--color-primary);
+    font-size: var(--font-size-medium); /* Adjust font size */
+}
+
+.card-category {
+    color: var(--color-primary);
+    font-size: var(--font-size-medium); /* Adjust font size */
+}
+
+/* Revisit the body and anchor declarations */
+a {
+    color: var(--text-color);
+}
+
+/* Target all 6 levels of heading tags */
+h1, h2, h3, h4, h5, h6 {
+    /* Set font-family to font-family-title */
+    font-family: var(--font-family-title);
+     font-weight: var(--font-weight-bold);
+}
