@@ -57,7 +57,7 @@ body {
     font-weight: var(--font-weight-regular);
 }
 
-a { /* Targeting anchor elements containing a hyperlink */
+a:link { /* Targeting anchor elements containing a hyperlink */
     text-decoration: none; /* Remove default underline */
     color: var(--text-color)
 }
