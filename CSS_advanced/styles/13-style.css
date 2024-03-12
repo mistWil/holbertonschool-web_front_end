@@ -57,20 +57,20 @@ body {
     font-weight: var(--font-weight-regular);
 }
 
-a[href] { /* Targeting anchor elements containing a hyperlink */
+a { /* Targeting anchor elements containing a hyperlink */
     text-decoration: none; /* Remove default underline */
     color: var(--text-color)
 }
 
-a[href]:visited { /* Targeting visited state */
+a:visited { /* Targeting visited state */
     font-style: italic; /* Italicize the text */
 }
 
-a[href]:hover { /* Targeting hover state */
+a:hover { /* Targeting hover state */
     text-decoration: underline; /* Decorate with an underline when hovering */
 }
 
-a[href]:active { /* Targeting active state */
+a:active { /* Targeting active state */
     background-color: var(--color-light-grey); /* Set background color */
 }
 
