@@ -13,8 +13,8 @@
 
 html {
     /* Set font size to 62.5% of normal size */
-    font-size: 62.5%;
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 body {
