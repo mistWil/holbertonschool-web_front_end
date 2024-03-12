@@ -1,0 +1,108 @@
+:root {
+    /* Define custom property section-header-align and set it to center */
+    --section-header-align: center;
+
+    /* Define custom property section-tagline-transform and set it to uppercase */
+    --section-tagline-transform: uppercase;
+
+     /* Nouvelles propriétés personnalisées */
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black); /* Utilisation de la variable déjà définie */
+
+    /* Define custom font-size properties */
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+
+    /* Define custom font-family properties */
+    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    /* Define custom font-weight properties */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Define colors */
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+
+    /* Define custom line-height properties */
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+}
+
+html {
+    /* Set font size to 62.5% of normal size */
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    /* Set the minimum height of line boxes in the body to line-height-base */
+    line-height: var(--line-height-base);
+    /*Set the text-color*/
+    color: var(--text-color);
+    /* Set body's font size to font-size-medium */
+    font-size: var(--font-size-medium);
+    /* Set body's font-family to font-family-base */
+    font-family: var(--font-family-base);
+    /* Set the boldness of fonts in the body to font-weight-regular */
+    font-weight: var(--font-weight-regular);
+}
+
+.card-category {
+    color: var(--color-primary);
+    font-size: var(--font-size-medium); /* Adjust font size */
+}
+
+/* Target the class section-header and align horizontally with section-header-align */
+.section-header {
+    text-align: var(--section-header-align); /* Align horizontally */
+}
+
+.section-title {
+    /* Définition des styles */
+    font-family: var(--font-family-title); /* Utilisation de la variable déjà définie */
+    font-size: var(--font-size-xx-large); /* Utilisation de la variable déjà définie */
+    font-weight: var(--font-weight-bold); /* Utilisation de la variable déjà définie */
+    margin-bottom: var(--section-title-margin); /* Utilisation de la nouvelle propriété personnalisée */
+    color: var(--section-title-color); /* Utilisation de la nouvelle propriété personnalisée */
+}
+
+/* Targeting the section-tagline class */
+.section-tagline {
+    color: var(--color-primary);
+    font-size: var(--font-size-medium); /* Adjust font size */
+     /* Set the family of fonts to font-family-title */
+    font-family: var(--font-family-title);
+    /* Transform the text to uppercase */
+    text-transform: var(--section-tagline-transform);
+    /* Set the weight of fonts to font-weight-bold */
+    font-weight: var(--font-weight-bold);
+}
+
+/* Revisit the body and anchor declarations */
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+a:hover {
+    color: inherit; /* Maintain inherited color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+/* Target all 6 levels of heading tags */
+h1, h2, h3, h4, h5, h6 {
+    /* Set font-family to font-family-title */
+    font-family: var(--font-family-title);
+     font-weight: var(--font-weight-bold);
+}
+
