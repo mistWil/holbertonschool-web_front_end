@@ -57,18 +57,9 @@ body {
     font-weight: var(--font-weight-regular);
 }
 
-a {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit color from parent */
-}
-
-a:hover {
-    color: inherit; /* Maintain inherited color on hover */
-    text-decoration: none; /* Remove underline on hover */
-}
-
 a[href] { /* Targeting anchor elements containing a hyperlink */
     text-decoration: none; /* Remove default underline */
+    color: var(--text-color)
 }
 
 a[href]:visited { /* Targeting visited state */
